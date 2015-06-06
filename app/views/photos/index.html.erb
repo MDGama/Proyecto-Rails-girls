@@ -1,0 +1,16 @@
+<section class="picture-box">
+  <% @photos.each do |photo| %>
+    <figure>
+    <a href="">
+      <%= image_tag( photo.picture ) %>
+    </a>
+      <figcaption>
+        <a href="">
+          <%= image_tag( "coment-relaxed.png" ) %>
+          <span>1</span>
+        </a>
+      </figcaption>
+    </figure>
+
+  <% end %>
+</section>
